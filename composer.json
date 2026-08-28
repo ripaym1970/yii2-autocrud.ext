@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": ">=8.3",
-        "yiisoft/yii2": "^2.0.55",
+        "yiisoft/yii2": "^22.0@dev",
         "yiisoft/yii2-bootstrap5": "^2.0.51",
         "kartik-v/yii2-detail-view": "^1.8.7",
         "kartik-v/yii2-grid": "^3.5.3",
@@ -72,6 +72,11 @@
     "autoload-dev": {
         "psr-4": {
             "ripaym1970\\autocrud\\tests\\": "tests\\"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
         }
     }
 }

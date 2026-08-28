@@ -5,7 +5,7 @@ namespace ripaym1970\autocrud\models;
 use Closure;
 use ripaym1970\autocrud\models\behaviors\NestedSetsBehavior;
 use ripaym1970\autocrud\models\behaviors\SynonymsBehavior;
-use paulzi\adjacencyList\AdjacencyListBehavior;
+use ripaym1970\autocrud\components\behaviors\PaulziAdjacencyList\AdjacencyListBehavior;
 use ripaym1970\autocrud\components\widgets\SaveRelations\SaveRelationsTrait;
 use ripaym1970\autocrud\components\Yiit;
 use Yii;

@@ -23,7 +23,7 @@
         "kartik-v/yii2-grid": "^3.5.3",
         "kartik-v/yii2-helpers": "^1.3.9",
         "kartik-v/yii2-widgets": "^3.4",
-        
+
         "yii2mod/yii2-toggle-column": "^1.1",
         "yii2mod/yii2-user": "^2.1",
         "yii2mod/yii2-cart": "*",
@@ -31,7 +31,7 @@
         "yii2tech/admin": "*",
         "yii2tech/ar-file": "*",
         "yii2tech/ar-position": "*",
-        "yii2tech/ar-search": "*",
+
         "yii2tech/ar-softdelete": "*",
         "yii2tech/ar-variation": "*",
         "yii2tech/authlog": "*",
@@ -39,7 +39,6 @@
         "yii2tech/selfupdate": "*",
         "yii2tech/sitemap": "*",
 
-        "paulzi/yii2-adjacency-list": "^2.2",
         "creocoder/yii2-nested-sets": "^0.9.0",
         "google/cloud-translate": "^1.20.2",
         "ext-mbstring": "*",

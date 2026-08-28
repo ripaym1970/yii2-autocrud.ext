@@ -1,12 +1,12 @@
 yii2-autocrud
 ==========
 
-[![Latest Stable Version](https://poser.pugx.org/bupy7/yii2-pages/v/stable)](https://packagist.org/packages/bupy7/yii2-page)
+[![Latest Stable Version](https://poser.pugx.org/bupy7/yii2-autocrud/v/stable)](https://packagist.org/packages/bupy7/yii2-page)
 [![Total Downloads](https://poser.pugx.org/bupy7/yii2-pages/downloads)](https://packagist.org/packages/bupy7/yii2-pages)
 [![Latest Unstable Version](https://poser.pugx.org/bupy7/yii2-pages/v/unstable)](https://packagist.org/packages/bupy7/yii2-pages)
 [![License](https://poser.pugx.org/bupy7/yii2-pages/license)](https://packagist.org/packages/bupy7/yii2-pages)
-[![Build Status](https://travis-ci.org/bupy7/yii2-pages.svg?branch=master)](https://travis-ci.org/bupy7/yii2-pages)
-[![Coverage Status](https://coveralls.io/repos/github/bupy7/yii2-pages/badge.svg?branch=master)](https://coveralls.io/github/bupy7/yii2-pages?branch=master)
+[![Build Status](https://travis-ci.org/bupy7/yii2-autocrud.svg?branch=master)](https://travis-ci.org/bupy7/yii2-autocrud)
+[![Coverage Status](https://coveralls.io/repos/github/bupy7/yii2-pages/badge.svg?branch=master)](https://coveralls.io/github/bupy7/yii2-autocrud?branch=master)
 
 A static pages module implements CRUD using Imperavi Redactor.
 
@@ -36,14 +36,14 @@ Installation
 **Add module in your config file:**
 
 ```php
-'bootstrap' => ['pages'],
+'bootstrap' => ['autocrud'],
 
 ...
 
 'modules' => [
     ...
 
-    'pages' => 'ripaym1970\autocrud\Module',
+    'autocrud' => 'ripaym1970\autocrud\Module',
 ]
 ```
 
@@ -122,7 +122,7 @@ You can upload and add files/images via Imperavi Redactor, if enable it:
 'modules' => [
     ...
     
-    'pages' => [
+    'autocrud' => [
         'class' => 'ripaym1970\autocrud\Module',
         
         ...
@@ -145,7 +145,7 @@ Set up the custom language at Imperavi redactor:
 'modules' => [
     ...
 
-    'pages' => [
+    'autocrud' => [
         'class' => 'ripaym1970\autocrud\Module',
         'imperaviLanguage' => 'es',
     ],

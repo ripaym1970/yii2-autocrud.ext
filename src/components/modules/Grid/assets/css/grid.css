@@ -1,0 +1,132 @@
+/* fix grid fullscreen */
+.grid-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh !important;
+    z-index: 1050;
+}
+
+
+.k-splitter,
+.kendo-grid,
+.kendo-tree {
+    flex-grow: 1;
+}
+
+.popup-dialog .kendo-grid,
+.popup-dialog .kendo-tree {
+    height: auto;
+}
+
+
+
+/* fix height */
+.k-grid-toolbar,
+.k-grouping-header {
+    padding: 0.1em 0.4em !important;
+}
+
+/* hack for kendo grid, nowrap */
+.k-grid td {
+    white-space: nowrap;
+}
+
+/** fix grid positions **/
+.k-grid .k-cell-inner > .k-link {
+    justify-content: center;
+}
+
+.k-button-solid-primary {
+    padding: 6px;
+}
+
+.k-input-spinner .k-spinner-increase .k-icon,
+.k-input-spinner .k-spinner-decrease .k-icon {
+    top: 0;
+}
+
+/** fix grid-button color **/
+.k-pager-nav.k-link.k-disabled {
+    color: #000000;
+}
+
+.k-pager-wrap .k-pager-refresh,
+.k-pager-wrap .k-link,
+.k-pager-wrap .k-link:hover {
+    background: none;
+}
+
+.k-spinner-increase,
+.k-spinner-decrease,
+.k-picker .k-input-button,
+.badge-primary,
+.k-pager-wrap .bg-primary-700:hover,
+.k-pager-nav.k-link,
+.k-pager-refresh.k-link,
+.k-pager-refresh.k-link:link,
+.k-pager-refresh.k-link:visited,
+.k-grid-header .k-link,
+.k-grid-header .k-link:link,
+.k-grid-header .k-link:visited,
+.k-grouping-header .k-link {
+    color: #ffffff;
+}
+
+.k-spinner-increase:hover,
+.k-spinner-decrease:hover,
+.k-button-solid-base:hover,
+.k-picker .k-input-button:hover,
+.k-link.k-pager-nav:hover,
+.k-dropdown-wrap.k-hover,
+.k-dropdown-wrap .k-select:hover,
+.k-selectbox .k-select:hover,
+.k-button.bg-primary-500:hover,
+.k-button.k-split-button-arrow:hover,
+.k-button.k-button-icon:hover {
+    color: var(--theme-primary);
+    border-color: var(--theme-primary);
+    background-color: #ffffff;
+}
+
+.k-select .k-link:hover {
+    color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+.k-spinner-increase,
+.k-spinner-decrease,
+.badge-primary,
+.k-picker .k-input-button {
+    background-color: var(--theme-primary);
+}
+
+.k-button-solid-primary:hover {
+    color: var(--theme-primary);
+    background-color: #fff;
+    border-color: var(--theme-primary);
+}
+
+.k-button-solid-base:hover {
+    border-width: 1px;
+}
+
+.k-group-cell.k-header {
+    background-color: var(--theme-primary);
+}
+
+.k-grid-header .k-header-column-menu.k-active {
+    background-color: transparent;
+    color: #ff0000ff;
+}
+
+/** if table row is selected, adjust background for icons */
+tr.k-selected td a i.fas {
+    color: #ffffff;
+}
+
+tr.k-selected td a.disabled i.fas {
+    color: #cccccc;
+}

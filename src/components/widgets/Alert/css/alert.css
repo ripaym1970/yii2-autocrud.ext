@@ -1,0 +1,147 @@
+
+.alert {
+    position:      relative;
+    padding:       1rem 1.25rem;
+    margin-bottom: 2rem;
+    border:        1px solid transparent;
+    border-radius: 4px
+}
+
+.alert-heading {
+    color: inherit
+}
+
+.alert-link {
+    font-weight: 700
+}
+
+.alert-dismissible {
+    padding-right: 3.71875rem
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top:      0;
+    right:    0;
+    padding:  1rem 1.25rem;
+    color:    inherit;
+    background-color: inherit;
+}
+
+.alert-primary {
+    color:            #47375e;
+    background-color: #e7e1f0;
+    border-color:     #ded5ea
+}
+
+.alert-primary hr {
+    border-top-color: #d1c4e2
+}
+
+.alert-primary .alert-link {
+    color: #2f243e
+}
+
+.alert-secondary {
+    color:            #464a4e;
+    background-color: #e7e8ea;
+    border-color:     #dddfe2
+}
+
+.alert-secondary hr {
+    border-top-color: #cfd2d6
+}
+
+.alert-secondary .alert-link {
+    color: #2e3133
+}
+
+.alert-success {
+    color:            #0f695f;
+    background-color: #d2f4f1;
+    border-color:     #c0f0eb
+}
+
+.alert-success hr {
+    border-top-color: #abebe4
+}
+
+.alert-success .alert-link {
+    color: #093c37
+}
+
+.alert-info {
+    color:            #114e7e;
+    background-color: #d3eafd;
+    border-color:     #c1e2fc
+}
+
+.alert-info hr {
+    border-top-color: #a9d7fb
+}
+
+.alert-info .alert-link {
+    color: #0b3251
+}
+
+.alert-warning {
+    color:            #856522;
+    background-color: #fff3d9;
+    border-color:     #ffeeca
+}
+
+.alert-warning hr {
+    border-top-color: #ffe6b1
+}
+
+.alert-warning .alert-link {
+    color: #5c4618
+}
+
+.alert-danger {
+    color:            #841e4d;
+    background-color: #ffd7ea;
+    border-color:     #fec8e1
+}
+
+.alert-danger hr {
+    border-top-color: #feafd3
+}
+
+.alert-danger .alert-link {
+    color: #5a1535
+}
+
+.alert-light {
+    color:            #858585;
+    background-color: #ffffff;
+    border-color:     #ffffff
+}
+
+.alert-light hr {
+    border-top-color: #f2f2f2
+}
+
+.alert-light .alert-link {
+    color: #6c6c6c
+}
+
+.alert-dark {
+    color:            #292929;
+    background-color: #dcdcdc;
+    border-color:     #cecece
+}
+
+.alert-dark hr {
+    border-top-color: #c1c1c1
+}
+
+.alert-dark .alert-link {
+    color: #101010
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}

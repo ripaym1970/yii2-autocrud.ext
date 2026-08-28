@@ -1,0 +1,36 @@
+.sidebar-menu {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+.sidebar-menu>li>a {
+    padding-left: 0 !important;
+}
+.sidebar-menu li.header {
+    padding: 0 !important;
+}
+.treeview-menu {
+    background: #1e282c !important;
+}
+.treeview-menu>li>a {
+    padding-left: 30px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+.treeview-menu>li.menu-open>a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-left-color: #3c8dbc;
+    border-right-color: #3c8dbc;
+    background: #000000;
+}
+
+li:hover>a,
+li.active>a,
+li.menu-open>a {
+    color: #ffffff !important;
+    background: #1e282c;
+}
+
+.fa-money:before {
+    content: "\f0d6";
+}

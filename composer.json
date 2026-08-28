@@ -1,0 +1,77 @@
+{
+    "name": "ripaym1970/yii2-autocrud",
+    "description": "AutoCRUD Yii2 extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "static", "crud", "module"],
+    "homepage": "https://github.com/ripaym1970/yii2-autocrud",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ripa Yurii",
+            "email": "ripaym1970@gmail.com",
+            "homepage": "http://ripaym1970.com.ua"
+        }
+    ],
+    "require": {
+        "php": ">=8.3",
+        "yiisoft/yii2": "^2.0.55",
+        "yiisoft/yii2-bootstrap5": "^2.0.51",
+        "kartik-v/yii2-detail-view": "^1.8.7",
+        "kartik-v/yii2-grid": "^3.5.3",
+        "kartik-v/yii2-helpers": "^1.3.9",
+        "kartik-v/yii2-widgets": "^3.4",
+
+        "yii2mod/yii2-settings": "^2.5",
+        "yii2mod/yii2-toggle-column": "^1.1",
+        "yii2mod/yii2-user": "^2.1",
+        "yii2mod/yii2-cart": "*",
+
+        "yii2tech/admin": "*",
+        "yii2tech/ar-file": "*",
+        "yii2tech/ar-position": "*",
+        "yii2tech/ar-search": "*",
+        "yii2tech/ar-softdelete": "*",
+        "yii2tech/ar-variation": "*",
+        "yii2tech/authlog": "*",
+        "yii2tech/filedb": "*",
+        "yii2tech/selfupdate": "*",
+        "yii2tech/sitemap": "*",
+
+        "paulzi/yii2-adjacency-list": "^2.2",
+        "creocoder/yii2-nested-sets": "^0.9.0",
+        "google/cloud-translate": "^1.20.2",
+        "ext-mbstring": "*",
+        "ext-iconv": "*"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        },
+        "optimize-autoloader": true,
+        "classmap-authoritative": true,
+        "apcu-autoloader": true
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/config/functions.php"
+        ],
+        "psr-4": {
+            "ripaym1970\\autocrud\\": "src\\"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ripaym1970\\autocrud\\tests\\": "tests\\"
+        }
+    }
+}

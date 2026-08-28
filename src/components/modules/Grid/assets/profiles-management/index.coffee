@@ -1,0 +1,34 @@
+
+form = null
+
+Backbone.Radio.channel("selection").on 'model:select', (items, view)->
+
+  if view.$el.attr('id') != 'js-profiles'
+    return
+
+  $("#js-shares").html('').append('<div id="js-form-shares"></div>')
+
+  if !_.isArray(items)
+    form = new application.Views.InlineForm({
+      'url': "#{homeUrl}grid/profiles-management/get-shares?id=#{items.GridProfile__id}",
+      'el': '#js-form-shares'
+    })
+    items = [items]
+
+  icon = $('#js-export')
+
+  field = 'ids[]'
+
+  selectedIds = _.pluck items, 'GridProfile__id'
+  search = {}
+  search[field] = selectedIds
+
+  url = icon.prop 'href'
+  href = URI(url)
+    .removeSearch(field)
+    .addSearch(search).toString()
+  icon.attr 'href', href
+  if items.length
+    application.enableObject icon
+  else
+    application.disableObject icon

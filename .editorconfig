@@ -1,0 +1,48 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+max_line_length = 120
+tab_width = 4
+trim_trailing_whitespace = true
+
+[*.php]
+ij_php_space_before_short_closure_left_parenthesis = false
+ij_php_space_after_type_cast = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[{.babelrc,composer.lock,.stylelintrc,jest.config,.eslintrc,*.json,*.jsb3,*.jsb2,*.bowerrc}]
+indent_size = 2
+
+[composer.json]
+indent_size = 4
+
+[*.feature]
+indent_size=2
+
+[{jshint.json,*.jshintrc}]
+indent_size=2
+
+[{*.jscs.json,*.jscsrc}]
+indent_size=2
+
+[*.js.map]
+indent_size=2
+
+[{*.ddl,*.sql}]
+indent_size=2
+
+[*.less]
+indent_size=2
+
+[*.scss]
+indent_size=2
+
+[{*.yaml,*.yml}]
+indent_size=2

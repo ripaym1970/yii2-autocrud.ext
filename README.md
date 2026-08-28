@@ -18,16 +18,26 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ripaym1970/yii2-autocrud "*"
+php composer.phar config repositories.yii2-autocrud vcs https://github.com/ripaym1970/yii2-autocrud.ext
+php composer.phar require --prefer-dist ripaym1970/yii2-autocrud:dev-main
 ```
 
-or add
+Or add the repository and package to your `composer.json`:
 
 ```
-"ripaym1970/yii2-autocrud": "*"
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/ripaym1970/yii2-autocrud.ext"
+    }
+],
+"require": {
+    "ripaym1970/yii2-autocrud": "dev-main"
+}
 ```
 
-to the require section of your `composer.json` file.
+The repository currently provides the `main` branch without a stable release tag, so
+the `dev-main` constraint is required until a tagged release is published.
 
 
 Installation

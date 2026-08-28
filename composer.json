@@ -73,5 +73,10 @@
         "psr-4": {
             "ripaym1970\\autocrud\\tests\\": "tests\\"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
     }
 }
